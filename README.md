@@ -16,15 +16,6 @@ Hi 👋 I'm **Cem** — a software engineering student who likes owning the whol
 - 🤖 **Also building:** AI agent pipelines (FastAPI · LangGraph · React) that read and draft documents
 - 📐 **Rule I code by:** every external call gets a deterministic fallback — the demo never dies on stage
 
-## 📡 Recent activity
-
-<!--START_SECTION:activity-->
-1. 🎉 Merged PR [#2](https://github.com/cozalss/cozalss/pull/2) in [cozalss/cozalss](https://github.com/cozalss/cozalss)
-2. 💪 Opened PR [#2](https://github.com/cozalss/cozalss/pull/2) in [cozalss/cozalss](https://github.com/cozalss/cozalss)
-3. 🎉 Merged PR [#1](https://github.com/cozalss/cozalss/pull/1) in [cozalss/cozalss](https://github.com/cozalss/cozalss)
-4. 💪 Opened PR [#1](https://github.com/cozalss/cozalss/pull/1) in [cozalss/cozalss](https://github.com/cozalss/cozalss)
-<!--END_SECTION:activity-->
-
 ## 📦 Selected builds
 
 | Project | What it is | Stack |
