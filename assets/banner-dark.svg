@@ -1,0 +1,140 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Cem Özal — AI agent pipelines, full-stack engineering, TEKNOFEST 2026">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b0f14"/>
+      <stop offset="1" stop-color="#101720"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2f8fa6">
+        <animate attributeName="offset" values="0;0.25;0" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#8e3d66">
+        <animate attributeName="offset" values="0.5;0.75;0.5" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#e0563c"/>
+    </linearGradient>
+    <linearGradient id="name" x1="70" y1="120" x2="560" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8edf2"/>
+      <stop offset="1" stop-color="#9fb6c9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2f8fa6" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#2f8fa6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <!-- canvas -->
+  <rect x="1" y="1" width="1198" height="298" rx="16" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="298" rx="16" stroke="#1f2a36" stroke-width="1.5"/>
+  <circle cx="960" cy="60" r="260" fill="url(#glow)"/>
+
+  <!-- dotted grid texture, right side -->
+  <g fill="#334455" opacity="0.35">
+    <circle cx="700" cy="40" r="1.3"/><circle cx="740" cy="40" r="1.3"/><circle cx="780" cy="40" r="1.3"/><circle cx="820" cy="40" r="1.3"/><circle cx="860" cy="40" r="1.3"/><circle cx="900" cy="40" r="1.3"/><circle cx="940" cy="40" r="1.3"/><circle cx="980" cy="40" r="1.3"/><circle cx="1020" cy="40" r="1.3"/><circle cx="1060" cy="40" r="1.3"/><circle cx="1100" cy="40" r="1.3"/><circle cx="1140" cy="40" r="1.3"/>
+    <circle cx="700" cy="260" r="1.3"/><circle cx="740" cy="260" r="1.3"/><circle cx="780" cy="260" r="1.3"/><circle cx="820" cy="260" r="1.3"/><circle cx="860" cy="260" r="1.3"/><circle cx="900" cy="260" r="1.3"/><circle cx="940" cy="260" r="1.3"/><circle cx="980" cy="260" r="1.3"/><circle cx="1020" cy="260" r="1.3"/><circle cx="1060" cy="260" r="1.3"/><circle cx="1100" cy="260" r="1.3"/><circle cx="1140" cy="260" r="1.3"/>
+  </g>
+
+  <!-- ===== left: identity ===== -->
+  <text x="72" y="118" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="54" font-weight="700" letter-spacing="-1" fill="url(#name)">Cem Özal</text>
+  <text x="74" y="156" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="500" fill="#8aa3b8">AI agent pipelines · full-stack engineering</text>
+
+  <!-- role chips -->
+  <g font-family="Consolas, Menlo, monospace" font-size="13">
+    <rect x="72" y="182" width="182" height="30" rx="15" fill="#12202b" stroke="#204052" stroke-width="1"/>
+    <text x="163" y="201" text-anchor="middle" fill="#5fb7cc">TEKNOFEST 2026</text>
+    <rect x="266" y="182" width="150" height="30" rx="15" fill="#1d1420" stroke="#43263a" stroke-width="1"/>
+    <text x="341" y="201" text-anchor="middle" fill="#c86f9d">LangGraph · RAG</text>
+    <rect x="428" y="182" width="128" height="30" rx="15" fill="#20140f" stroke="#4a2a1e" stroke-width="1"/>
+    <text x="492" y="201" text-anchor="middle" fill="#e8825f">FastAPI · React</text>
+  </g>
+
+  <!-- ===== right: agent pipeline graph (TasnifX motif) ===== -->
+  <g font-family="Consolas, Menlo, monospace" font-size="12">
+    <!-- edges -->
+    <g stroke="#2b3a49" stroke-width="1.6" fill="none">
+      <path id="e1" d="M 745 105 C 785 105 795 75 835 75"/>
+      <path id="e2" d="M 745 105 C 785 105 795 135 835 135"/>
+      <path id="e3" d="M 905 75 C 945 75 955 105 995 105"/>
+      <path id="e4" d="M 905 135 C 945 135 955 105 995 105"/>
+      <path id="e5" d="M 1060 105 C 1090 105 1090 105 1108 105"/>
+    </g>
+
+    <!-- pulses travelling along edges -->
+    <circle r="3.2" fill="#5fb7cc">
+      <animateMotion dur="2.4s" repeatCount="indefinite" begin="0s">
+        <mpath href="#e1" xlink:href="#e1"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="2.4s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+    <circle r="3.2" fill="#c86f9d">
+      <animateMotion dur="2.4s" repeatCount="indefinite" begin="0.5s">
+        <mpath href="#e2" xlink:href="#e2"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="2.4s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <circle r="3.2" fill="#5fb7cc">
+      <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.2s">
+        <mpath href="#e3" xlink:href="#e3"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="2.4s" repeatCount="indefinite" begin="1.2s"/>
+    </circle>
+    <circle r="3.2" fill="#c86f9d">
+      <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.7s">
+        <mpath href="#e4" xlink:href="#e4"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="2.4s" repeatCount="indefinite" begin="1.7s"/>
+    </circle>
+    <circle r="3.2" fill="#e8825f">
+      <animateMotion dur="1.6s" repeatCount="indefinite" begin="2.4s">
+        <mpath href="#e5" xlink:href="#e5"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="1.6s" repeatCount="indefinite" begin="2.4s"/>
+    </circle>
+
+    <!-- node: doc -->
+    <g>
+      <rect x="655" y="88" width="90" height="34" rx="9" fill="#101a24" stroke="#2f8fa6" stroke-width="1.4">
+        <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="4.8s" begin="0s" repeatCount="indefinite"/>
+      </rect>
+      <text x="700" y="109" text-anchor="middle" fill="#7fc6d8">evrak.pdf</text>
+    </g>
+    <!-- node: ocr -->
+    <g>
+      <rect x="835" y="58" width="70" height="34" rx="9" fill="#101a24" stroke="#2f8fa6" stroke-width="1.4">
+        <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="4.8s" begin="0.6s" repeatCount="indefinite"/>
+      </rect>
+      <text x="870" y="79" text-anchor="middle" fill="#7fc6d8">ocr</text>
+    </g>
+    <!-- node: classify -->
+    <g>
+      <rect x="835" y="118" width="70" height="34" rx="9" fill="#191019" stroke="#8e3d66" stroke-width="1.4">
+        <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="4.8s" begin="1.2s" repeatCount="indefinite"/>
+      </rect>
+      <text x="870" y="139" text-anchor="middle" fill="#d387ae">tasnif</text>
+    </g>
+    <!-- node: rag -->
+    <g>
+      <rect x="995" y="88" width="65" height="34" rx="9" fill="#191019" stroke="#8e3d66" stroke-width="1.4">
+        <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="4.8s" begin="1.8s" repeatCount="indefinite"/>
+      </rect>
+      <text x="1027" y="109" text-anchor="middle" fill="#d387ae">rag</text>
+    </g>
+    <!-- node: draft (terminal) -->
+    <g>
+      <circle cx="1122" cy="105" r="15" fill="#231410" stroke="#e0563c" stroke-width="1.6"/>
+      <circle cx="1122" cy="105" r="15" fill="none" stroke="#e0563c" stroke-width="1.6" filter="url(#soft)" opacity="0.7">
+        <animate attributeName="r" values="15;24;15" dur="2.4s" begin="2.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;0;0.7" dur="2.4s" begin="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <text x="1122" y="110" text-anchor="middle" fill="#f0906c" font-size="13">✓</text>
+    </g>
+    <!-- caption under graph -->
+    <text x="893" y="185" text-anchor="middle" fill="#4d6377" font-size="12" letter-spacing="2">DOC → UNDERSTAND → ROUTE → DRAFT</text>
+  </g>
+
+  <!-- footer gradient bar -->
+  <rect x="1" y="292" width="1198" height="7" rx="3.5" fill="url(#bar)"/>
+</svg>
