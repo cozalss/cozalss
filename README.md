@@ -10,7 +10,7 @@
 
 </div>
 
-Merhaba 👋 I'm **Cem** — a software engineering student who likes owning the whole path: from the React component to the container it ships in. Currently going deep on **Kubernetes and cloud-native tooling**, and building AI agent pipelines on the side.
+Hi 👋 I'm **Cem** — a software engineering student who likes owning the whole path: from the React component to the container it ships in. Currently going deep on **Kubernetes and cloud-native tooling**, and building AI agent pipelines on the side.
 
 - ☸️ **Now:** Kubernetes — containers, deployments, CI/CD; making `git push` the only manual step
 - 🤖 **Also building:** AI agent pipelines (FastAPI · LangGraph · React) that read and draft documents
