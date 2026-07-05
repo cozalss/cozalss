@@ -3,41 +3,24 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/banner-light.svg">
-  <img alt="Cem Özal — AI agent pipelines · full-stack engineering · TEKNOFEST 2026" width="100%" src="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/banner-dark.svg">
+  <img alt="Cem Özal — full-stack engineering · cloud-native · AI" width="100%" src="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/banner-dark.svg">
 </picture>
 
-<a href="https://github.com/cozalss"><img alt="typing intro" src="https://readme-typing-svg.demolab.com/?lines=Building+AI+agents+for+public+document+workflows;TasnifX+%E2%80%94+TEKNOFEST+2026+AI+Language+Agents;OCR+%C2%B7+RAG+%C2%B7+LangGraph+%C2%B7+deterministic+fallbacks;Kamu+evrak%C4%B1n%C4%B1+okuyan+ve+yazan+ajanlar+%F0%9F%87%B9%F0%9F%87%B7&font=Fira+Code&size=18&color=2F8FA6&background=00000000&center=true&vCenter=true&width=680&height=44&duration=3600&pause=900" /></a>
+<a href="https://github.com/cozalss"><img alt="typing intro" src="https://readme-typing-svg.demolab.com/?lines=Full-stack+developer;Kubernetes+%26+cloud-native+%E2%80%94+hands+on;AI+agent+pipelines+with+FastAPI+%C2%B7+LangGraph;deterministic+fallbacks+%3E+vibes&font=Fira+Code&size=18&color=2F8FA6&background=00000000&center=true&vCenter=true&width=680&height=44&duration=3600&pause=900" /></a>
 
 </div>
 
-Merhaba 👋 I'm **Cem** — a software engineering student who builds agent pipelines that **read, understand and draft official documents**. I care about three unfashionable things: deterministic fallbacks, measurable evals, and calm UIs.
+Merhaba 👋 I'm **Cem** — a software engineering student who likes owning the whole path: from the React component to the container it ships in. Currently going deep on **Kubernetes and cloud-native tooling**, and building AI agent pipelines on the side.
 
-- 🛰️ **Now:** **TasnifX** — intelligent agent support system for public-sector document & correspondence workflows *(TEKNOFEST 2026 · AI Language Agents — repo goes public with the competition)*
-- 🩺 **Before:** a GDPR-compliant healthcare collaboration platform, and university coursework in Java
-- 📐 **Rule I code by:** every LLM call gets a deterministic fallback — the demo never dies on stage
-
-## ⚙️ TasnifX — the flagship
-
-Multi-agent pipeline (FastAPI · LangGraph · React · DeepSeek) that takes a raw scanned document and returns a classified, summarized, legally-grounded official reply draft:
-
-```text
-evrak.pdf → ocr → sınıflandır → bilgi çıkar → eksik tespit → mevzuat (BM25 RAG) → özet → resmî yazı taslağı → birim yönlendirme
-```
-
-Engineering highlights (measured on the project's eval harness, not vibes):
-
-| What | Result | How |
-|---|---|---|
-| OCR word error rate | **51% → 29%** | LLM post-correction pass over OCR output |
-| Legislation Recall@1 | **0.65 → 1.00** | BM25 retrieval + DeepSeek listwise rerank |
-| Cost per document | **~$0.001–0.002** | JSON-mode caching + escalation only when uncertain |
-| PII | **masked by default** | checksum-valid synthetic TCKNs in all test data |
+- ☸️ **Now:** Kubernetes — containers, deployments, CI/CD; making `git push` the only manual step
+- 🤖 **Also building:** AI agent pipelines (FastAPI · LangGraph · React) that read and draft documents
+- 📐 **Rule I code by:** every external call gets a deterministic fallback — the demo never dies on stage
 
 ## 📦 Selected builds
 
 | Project | What it is | Stack |
 |---|---|---|
-| 🛰️ **TasnifX** | Agents that read, classify, summarize and *answer* official documents — TEKNOFEST 2026 finalist track | Python · FastAPI · LangGraph · React |
+| 🛰️ **TasnifX** | AI agents that read, classify, summarize and answer official documents *(private for now)* | Python · FastAPI · LangGraph · React |
 | 🩺 [**SENG384-project**](https://github.com/cozalss/SENG384-project) | Secure, GDPR-compliant platform for structured partner discovery between healthcare professionals and engineers | JavaScript |
 | ☕ [**SENG383-project**](https://github.com/cozalss/SENG383-project) | University software-engineering coursework | Java |
 
@@ -46,9 +29,9 @@ Engineering highlights (measured on the project's eval harness, not vibes):
 ## 🧰 Toolbox
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,fastapi,react,vite,js,java,git,githubactions,supabase,vscode&theme=dark&perline=10">
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python,fastapi,react,vite,js,java,git,githubactions,supabase,vscode&theme=light&perline=10">
-  <img alt="Python, FastAPI, React, Vite, JavaScript, Java, Git, GitHub Actions, Supabase, VS Code" src="https://skillicons.dev/icons?i=python,fastapi,react,vite,js,java,git,githubactions,supabase,vscode&theme=dark&perline=10">
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,js,react,vite,fastapi,java,kubernetes,docker,git,githubactions,supabase,vscode&theme=dark&perline=6">
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python,js,react,vite,fastapi,java,kubernetes,docker,git,githubactions,supabase,vscode&theme=light&perline=6">
+  <img alt="Python, JavaScript, React, Vite, FastAPI, Java, Kubernetes, Docker, Git, GitHub Actions, Supabase, VS Code" src="https://skillicons.dev/icons?i=python,js,react,vite,fastapi,java,kubernetes,docker,git,githubactions,supabase,vscode&theme=dark&perline=6">
 </picture>
 
 ## 🐍 The contribution graph gets eaten nightly
@@ -67,7 +50,7 @@ Engineering highlights (measured on the project's eval harness, not vibes):
 
 <sub>
 
-The header is a **handcrafted animated SVG** (SMIL, no generator — [source](https://github.com/cozalss/cozalss/blob/main/assets/banner-dark.svg)) themed after TasnifX's design tokens: <code>#2f8fa6</code> · <code>#8e3d66</code> · <code>#e0563c</code>.
+The header is a **handcrafted animated SVG** (SMIL, no generator — [source](https://github.com/cozalss/cozalss/blob/main/assets/banner-dark.svg)).
 The snake redraws itself every night via [![snake workflow](https://github.com/cozalss/cozalss/actions/workflows/snake.yml/badge.svg)](https://github.com/cozalss/cozalss/actions/workflows/snake.yml)
 
 </sub>
