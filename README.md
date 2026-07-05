@@ -20,9 +20,9 @@ Hi 👋 I'm **Cem** — a software engineering student who likes owning the whol
 
 | Project | What it is | Stack |
 |---|---|---|
+| 🏅 [**YETENEK 2.0**](https://github.com/cozalss/YETENEK2.0) | 🥈 **2nd place — METU Sports Tech Hackathon 2026.** AI sports-talent discovery for kids (8–15): a 5-minute phone-camera test battery, MediaPipe + Claude motion analysis, best-fit sport recommendations with injury-risk flags | TypeScript · Next.js · MediaPipe · Claude |
+| ⚖️ **Adalet Agent** | Source-grounded multi-agent legal AI for Turkish law — 159k-vector retrieval, 4-layer verification that drops unsourced or contradicted claims *(private for now)* | Python · FastAPI · LangGraph · Qdrant |
 | 🛰️ **TasnifX** | AI agents that read, classify, summarize and answer official documents *(private for now)* | Python · FastAPI · LangGraph · React |
-| 🩺 [**SENG384-project**](https://github.com/cozalss/SENG384-project) | Secure, GDPR-compliant platform for structured partner discovery between healthcare professionals and engineers | JavaScript |
-| ☕ [**SENG383-project**](https://github.com/cozalss/SENG383-project) | University software-engineering coursework | Java |
 
 <div align="center">
 
