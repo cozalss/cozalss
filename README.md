@@ -12,8 +12,8 @@
 
 Merhaba 👋 I'm **Cem** — a software engineering student who builds agent pipelines that **read, understand and draft official documents**. I care about three unfashionable things: deterministic fallbacks, measurable evals, and calm UIs.
 
-- 🛰️ **Now:** [TasnifX](https://github.com/cozalss/TasnifX-TeknoFest) — intelligent agent support system for public-sector document & correspondence workflows *(TEKNOFEST 2026 · AI Language Agents)*
-- 🩺 **Before:** a GDPR-compliant healthcare collaboration platform, and a Java scheduling engine
+- 🛰️ **Now:** **TasnifX** — intelligent agent support system for public-sector document & correspondence workflows *(TEKNOFEST 2026 · AI Language Agents — repo goes public with the competition)*
+- 🩺 **Before:** a GDPR-compliant healthcare collaboration platform, and university coursework in Java
 - 📐 **Rule I code by:** every LLM call gets a deterministic fallback — the demo never dies on stage
 
 ## ⚙️ TasnifX — the flagship
@@ -33,6 +33,14 @@ Engineering highlights (measured on the project's eval harness, not vibes):
 | Cost per document | **~$0.001–0.002** | JSON-mode caching + escalation only when uncertain |
 | PII | **masked by default** | checksum-valid synthetic TCKNs in all test data |
 
+## 📦 Selected builds
+
+| Project | What it is | Stack |
+|---|---|---|
+| 🛰️ **TasnifX** | Agents that read, classify, summarize and *answer* official documents — TEKNOFEST 2026 finalist track | Python · FastAPI · LangGraph · React |
+| 🩺 [**SENG384-project**](https://github.com/cozalss/SENG384-project) | Secure, GDPR-compliant platform for structured partner discovery between healthcare professionals and engineers | JavaScript |
+| ☕ [**SENG383-project**](https://github.com/cozalss/SENG383-project) | University software-engineering coursework | Java |
+
 <div align="center">
 
 ## 🧰 Toolbox
@@ -42,46 +50,6 @@ Engineering highlights (measured on the project's eval harness, not vibes):
   <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python,fastapi,react,vite,js,java,git,githubactions,supabase,vscode&theme=light&perline=10">
   <img alt="Python, FastAPI, React, Vite, JavaScript, Java, Git, GitHub Actions, Supabase, VS Code" src="https://skillicons.dev/icons?i=python,fastapi,react,vite,js,java,git,githubactions,supabase,vscode&theme=dark&perline=10">
 </picture>
-
-## 📦 Selected builds
-
-<a href="https://github.com/cozalss/SENG384-project"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=cozalss&repo=SENG384-project&hide_border=true&bg_color=00000000&title_color=2f8fa6&icon_color=e0563c&text_color=adbac7">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=cozalss&repo=SENG384-project&hide_border=true&bg_color=00000000&title_color=1f6b7e&icon_color=b8442e&text_color=3a3229">
-  <img alt="SENG384-project — GDPR-compliant healthcare platform" src="https://github-readme-stats.vercel.app/api/pin/?username=cozalss&repo=SENG384-project&hide_border=true&bg_color=00000000&title_color=2f8fa6&icon_color=e0563c&text_color=adbac7">
-</picture></a><a href="https://github.com/cozalss/SENG383-project"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=cozalss&repo=SENG383-project&hide_border=true&bg_color=00000000&title_color=2f8fa6&icon_color=e0563c&text_color=adbac7">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=cozalss&repo=SENG383-project&hide_border=true&bg_color=00000000&title_color=1f6b7e&icon_color=b8442e&text_color=3a3229">
-  <img alt="SENG383-project — Java scheduling engine" src="https://github-readme-stats.vercel.app/api/pin/?username=cozalss&repo=SENG383-project&hide_border=true&bg_color=00000000&title_color=2f8fa6&icon_color=e0563c&text_color=adbac7">
-</picture></a>
-
-## 📊 Numbers
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=cozalss&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000&title_color=2f8fa6&icon_color=e0563c&text_color=adbac7&ring_color=2f8fa6&rank_icon=github">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=cozalss&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000&title_color=1f6b7e&icon_color=b8442e&text_color=3a3229&ring_color=1f6b7e&rank_icon=github">
-  <img alt="GitHub stats" height="170" src="https://github-readme-stats.vercel.app/api?username=cozalss&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000&title_color=2f8fa6&icon_color=e0563c&text_color=adbac7&ring_color=2f8fa6&rank_icon=github">
-</picture><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=cozalss&layout=compact&langs_count=8&hide_border=true&bg_color=00000000&title_color=2f8fa6&text_color=adbac7">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=cozalss&layout=compact&langs_count=8&hide_border=true&bg_color=00000000&title_color=1f6b7e&text_color=3a3229">
-  <img alt="Top languages" height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cozalss&layout=compact&langs_count=8&hide_border=true&bg_color=00000000&title_color=2f8fa6&text_color=adbac7">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=cozalss&hide_border=true&background=00000000&ring=2f8fa6&fire=e0563c&currStreakNum=e8edf2&sideNums=adbac7&currStreakLabel=2f8fa6&sideLabels=8aa3b8&dates=6b7a88&stroke=2b3a49">
-  <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=cozalss&hide_border=true&background=00000000&ring=1f6b7e&fire=b8442e&currStreakNum=161616&sideNums=3a3229&currStreakLabel=1f6b7e&sideLabels=6b5d4a&dates=8a7a63&stroke=d9cbb8">
-  <img alt="Contribution streak" src="https://streak-stats.demolab.com/?user=cozalss&hide_border=true&background=00000000&ring=2f8fa6&fire=e0563c&currStreakNum=e8edf2&sideNums=adbac7&currStreakLabel=2f8fa6&sideLabels=8aa3b8&dates=6b7a88&stroke=2b3a49">
-</picture>
-
-<details>
-<summary>🏆 Trophy cabinet</summary>
-<br>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=cozalss&theme=dark_dimmed&no-bg=true&no-frame=true&column=7&margin-w=8&margin-h=8">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=cozalss&theme=flat&no-bg=true&no-frame=true&column=7&margin-w=8&margin-h=8">
-  <img alt="GitHub trophies" src="https://github-profile-trophy.vercel.app/?username=cozalss&theme=dark_dimmed&no-bg=true&no-frame=true&column=7&margin-w=8&margin-h=8">
-</picture>
-</details>
 
 ## 🐍 The contribution graph gets eaten nightly
 
@@ -99,7 +67,7 @@ Engineering highlights (measured on the project's eval harness, not vibes):
 
 <sub>
 
-The header is a **handcrafted animated SVG** (SMIL, no generator — [source](https://github.com/cozalss/cozalss/blob/main/assets/banner-dark.svg)) themed after TasnifX's design tokens.
+The header is a **handcrafted animated SVG** (SMIL, no generator — [source](https://github.com/cozalss/cozalss/blob/main/assets/banner-dark.svg)) themed after TasnifX's design tokens: <code>#2f8fa6</code> · <code>#8e3d66</code> · <code>#e0563c</code>.
 The snake redraws itself every night via [![snake workflow](https://github.com/cozalss/cozalss/actions/workflows/snake.yml/badge.svg)](https://github.com/cozalss/cozalss/actions/workflows/snake.yml)
 
 </sub>
