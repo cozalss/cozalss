@@ -16,6 +16,11 @@ Hi 👋 I'm **Cem** — a software engineering student who likes owning the whol
 - 🤖 **Also building:** AI agent pipelines (FastAPI · LangGraph · React) that read and draft documents
 - 📐 **Rule I code by:** every external call gets a deterministic fallback — the demo never dies on stage
 
+## 📡 Recent activity
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
 ## 📦 Selected builds
 
 | Project | What it is | Stack |

@@ -1,0 +1,21 @@
+name: update-readme-activity
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Update README with recent GitHub activity
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jamesgeorge007/github-activity-readme@v0.5.0
+        with:
+          MAX_LINES: 5
+          FILTER_EVENTS: "IssueCommentEvent,IssuesEvent,PullRequestEvent,ReleaseEvent,PushEvent,CreateEvent"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
