@@ -44,9 +44,8 @@ Hi 👋 I'm **Cem** — a software engineering student who likes owning the whol
 
 ## 📬 Reach me
 
-<a href="mailto:cannozall@gmail.com"><img alt="Gmail" src="https://img.shields.io/badge/gmail-cannozall%40gmail.com-e0563c?style=for-the-badge&logo=gmail&logoColor=white"></a>
+<a href="mailto:cemmozal@gmail.com"><img alt="Gmail" src="https://img.shields.io/badge/gmail-cemmozal%40gmail.com-e0563c?style=for-the-badge&logo=gmail&logoColor=white"></a>
 <a href="https://github.com/cozalss?tab=followers"><img alt="Followers" src="https://img.shields.io/github/followers/cozalss?style=for-the-badge&logo=github&color=2f8fa6&labelColor=30363d"></a>
-<img alt="Profile views" src="https://komarev.com/ghpvc/?username=cozalss&label=views&color=8e3d66&style=for-the-badge">
 
 <sub>
 
