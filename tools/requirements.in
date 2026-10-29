@@ -1,0 +1,5 @@
+# What tools/build.py needs. Edit here, then regenerate both locks from tools/:
+#   pip-compile --generate-hashes --strip-extras requirements.in
+#   pip-compile --generate-hashes --strip-extras requirements-dev.in
+fonttools[woff]==4.62.1  # WOFF2 fonts to outlines
+uharfbuzz==0.57.0  # text shaping

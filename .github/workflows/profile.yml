@@ -1,0 +1,139 @@
+name: profile
+
+# The README is a tiny delivery pipeline:
+#   test    → unit tests with a coverage gate + "committed SVGs match their sources" (pushes and PRs)
+#   render  → snake + live telemetry, starting from the last published files
+#   publish → validate again, then force-push the result to the `output` branch
+# If a generator fails, yesterday's panels stay up (deterministic fallback).
+
+on:
+  schedule:
+    - cron: "17 2 * * *" # nightly; GitHub may start scheduled runs hours late
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions: {}
+
+concurrency:
+  # PRs get their own lane, so a check run can never replace a queued publish
+  group: profile-${{ github.head_ref || 'publish' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  test:
+    if: github.event_name != 'schedule' # the nightly run only refreshes data; the code was tested on push
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: tools/requirements-dev.txt
+      - name: Install hash-locked dependencies (wheels only)
+        run: python -m pip install --require-hashes --only-binary ":all:" -r tools/requirements-dev.txt
+      - name: Unit tests (coverage gate in tools/pyproject.toml)
+        working-directory: tools
+        run: python -m pytest -q
+      - name: Committed artwork matches tools/ sources
+        run: python tools/build.py --check
+
+  render:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+      - name: Start from the last published panels
+        run: |
+          mkdir -p dist snake
+          if git fetch --depth=1 origin output; then
+            for name in $(python tools/validate_dist.py --expected); do
+              if git cat-file -e "FETCH_HEAD:$name" 2>/dev/null; then
+                git cat-file blob "FETCH_HEAD:$name" > "dist/$name"
+              fi
+            done
+          fi
+          ls -l dist
+      - name: Snake
+        id: snake
+        continue-on-error: true
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          # color_dots: empty, L1, L2, L3, L4 (brand teal ramp); snake in brand coral
+          outputs: |
+            snake/github-snake.svg?palette=github-light&color_snake=#e0563c&color_dots=#ebedf0,#c5e3ea,#86c5d4,#2f8fa6,#1c6676
+            snake/github-snake-dark.svg?palette=github-dark&color_snake=#e0563c&color_dots=#161b22,#12303a,#1b5566,#2f8fa6,#6cc3d6
+      - name: Snake honours reduced motion, then replaces yesterday's
+        id: snake_a11y
+        if: steps.snake.outcome == 'success'
+        continue-on-error: true
+        run: |
+          python tools/snake_a11y.py snake/github-snake.svg snake/github-snake-dark.svg
+          cp snake/github-snake.svg snake/github-snake-dark.svg dist/
+      - name: Telemetry
+        id: telemetry
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python tools/telemetry.py --user "$GITHUB_REPOSITORY_OWNER" --out dist
+      - name: Flag stale panels
+        if: steps.snake.outcome == 'failure' || steps.snake_a11y.outcome == 'failure' || steps.telemetry.outcome == 'failure'
+        run: echo "::warning::a generator failed; publishing the last good panels for it"
+      - name: Refuse to publish anything missing, extra or unsafe
+        run: python tools/validate_dist.py dist
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: dist
+          path: dist
+          retention-days: 3
+          if-no-files-found: error
+
+  publish:
+    needs: [test, render]
+    # after a green test job, or without one on the nightly schedule
+    if: >-
+      !cancelled() && needs.render.result == 'success' &&
+      (needs.test.result == 'success' || (github.event_name == 'schedule' && needs.test.result == 'skipped'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write # the only job that can write, and it runs no third-party code
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: dist
+          path: ${{ runner.temp }}/dist
+      - name: Validate again, from this job's own checkout
+        run: python3 tools/validate_dist.py "$RUNNER_TEMP/dist"
+      - name: Force-push dist to the output branch as one orphan commit
+        env:
+          DIST: ${{ runner.temp }}/dist
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # hash the validated bytes as they are: no work tree, no .gitattributes filters
+          for path in "$DIST"/*; do
+            blob=$(git hash-object -w --no-filters -- "$path")
+            printf '100644 blob %s\t%s\n' "$blob" "${path##*/}"
+          done > "$RUNNER_TEMP/tree.txt"
+          tree=$(git mktree < "$RUNNER_TEMP/tree.txt")
+          commit=$(git commit-tree "$tree" -m "chore: refresh profile panels")
+          git push --force origin "$commit:refs/heads/output"

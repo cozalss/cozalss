@@ -1,59 +1,70 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/banner-light.svg">
-  <img alt="Cem Özal — full-stack engineering · cloud-native · AI" width="100%" src="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/banner-dark.svg">
-</picture>
-
-<a href="https://github.com/cozalss"><img alt="typing intro" src="https://readme-typing-svg.demolab.com/?lines=Full-stack+developer;Kubernetes+%26+cloud-native+%E2%80%94+hands+on;AI+agent+pipelines+with+FastAPI+%C2%B7+LangGraph;deterministic+fallbacks+%3E+vibes&font=Fira+Code&size=18&color=2F8FA6&background=00000000&center=true&vCenter=true&width=680&height=44&duration=3600&pause=900" /></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/hero-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/hero-light.svg"><img alt="Cem Özal — software engineer, cloud-native and AI agents. Motto: deterministic fallbacks over vibes. An isometric Kubernetes cluster runs the projects YETENEK 2.0, Adalet Agent and Kamu Evrak as pods." src="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/hero-dark.svg" width="100%"></picture>
 
 </div>
 
-Hi 👋 I'm **Cem** — a software engineering student who likes owning the whole path: from the React component to the container it ships in. Currently going deep on **Kubernetes and cloud-native tooling**, and building AI agent pipelines on the side.
+Hi 👋 I'm **Cem**, a software engineering student who likes owning the whole path: from the agent graph and the React screen to the container they ship in. Most of what I build is **multi-agent AI that has to be right** (law, public-sector paperwork, kids' sports screening) and the **cloud-native plumbing** that keeps it running.
 
-- ☸️ **Now:** Kubernetes — containers, deployments, CI/CD; making `git push` the only manual step
-- 🤖 **Also building:** AI agent pipelines (FastAPI · LangGraph · React) that read and draft documents
-- 📐 **Rule I code by:** every external call gets a deterministic fallback — the demo never dies on stage
-
-## 📦 Selected builds
-
-| Project | What it is | Stack |
-|---|---|---|
-| 🏅 [**YETENEK 2.0**](https://github.com/cozalss/YETENEK2.0) | 🥈 **2nd place — METU Sports Tech Hackathon 2026.** AI sports-talent discovery for kids (8–15): a 5-minute phone-camera test battery, MediaPipe + Claude motion analysis, best-fit sport recommendations with injury-risk flags | TypeScript · Next.js · MediaPipe · Claude |
-| ⚖️ **Adalet Agent** | Source-grounded multi-agent legal AI for Turkish law — 159k-vector retrieval, 4-layer verification that drops unsourced or contradicted claims *(private for now)* | Python · FastAPI · LangGraph · Qdrant |
-| 🛰️ **TasnifX** | AI agents that read, classify, summarize and answer official documents *(private for now)* | Python · FastAPI · LangGraph · React |
+- 🤖 **Building:** multi-agent systems on FastAPI · LangGraph · Qdrant that cite a source or say *unverified*
+- ☸️ **Going deep on:** Kubernetes and cloud-native delivery, so `git push` stays the only manual step
+- 📐 **Rule I code by:** every external call gets a deterministic fallback, so the demo never dies on stage
 
 <div align="center">
 
-## 🧰 Toolbox
+## Selected work
 
-<sub><b>DevOps & Cloud</b></sub>
+<a href="https://github.com/cozalss/YETENEK2.0"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/card-yetenek-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/card-yetenek-light.svg"><img alt="YETENEK 2.0 — 2nd place · METU Sports Tech Hackathon 2026. A phone camera screens kids aged 8–15 for sports talent: MediaPipe scores a 5-minute test, Claude picks 3–5 of 12 sports and flags injury risk. 5 min test battery; 12 sport profiles; 0 videos uploaded (landmarks only). Stack: Next.js, MediaPipe, Claude, Supabase." src="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/card-yetenek-dark.svg" width="400"></picture></a>
+<a href="https://github.com/cozalss/adalet-agent"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/card-adalet-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/card-adalet-light.svg"><img alt="Adalet Agent — Turkish civil law · live demo. Multi-agent legal assistant grounded in the statute: fabricated citations are dropped, unmatched claims are flagged as unverified. 159k legal vectors (8 areas of law); 84.4% correct article (32 live cases); 1.8k tests (80% cov. gate). Stack: FastAPI, LangGraph, Qdrant, React." src="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/card-adalet-dark.svg" width="400"></picture></a>
 
-<code><img height="36" title="Kubernetes" alt="Kubernetes" src="https://raw.githubusercontent.com/github/explore/main/topics/kubernetes/kubernetes.png"></code> <code><img height="36" title="Docker" alt="Docker" src="https://raw.githubusercontent.com/github/explore/main/topics/docker/docker.png"></code> <code><img height="36" title="Linux" alt="Linux" src="https://raw.githubusercontent.com/github/explore/main/topics/linux/linux.png"></code> <code><img height="36" title="Bash" alt="Bash" src="https://raw.githubusercontent.com/github/explore/main/topics/bash/bash.png"></code> <code><img height="36" title="Git" alt="Git" src="https://raw.githubusercontent.com/github/explore/main/topics/git/git.png"></code> <code><img height="36" title="GitHub Actions" alt="GitHub Actions" src="https://raw.githubusercontent.com/github/explore/main/topics/actions/actions.png"></code> <code><img height="36" title="GitLab CI" alt="GitLab CI" src="https://raw.githubusercontent.com/github/explore/main/topics/gitlab/gitlab.png"></code> <code><img height="36" title="Jenkins" alt="Jenkins" src="https://raw.githubusercontent.com/github/explore/main/topics/jenkins/jenkins.png"></code> <code><img height="36" title="Terraform" alt="Terraform" src="https://raw.githubusercontent.com/github/explore/main/topics/terraform/terraform.png"></code> <code><img height="36" title="Ansible" alt="Ansible" src="https://raw.githubusercontent.com/github/explore/main/topics/ansible/ansible.png"></code> <code><img height="36" title="AWS" alt="AWS" src="https://raw.githubusercontent.com/github/explore/main/topics/aws/aws.png"></code> <code><img height="36" title="Azure" alt="Azure" src="https://raw.githubusercontent.com/github/explore/main/topics/azure/azure.png"></code> <code><img height="36" title="Google Cloud" alt="Google Cloud" src="https://raw.githubusercontent.com/github/explore/main/topics/google-cloud/google-cloud.png"></code> <code><img height="36" title="Nginx" alt="Nginx" src="https://raw.githubusercontent.com/github/explore/main/topics/nginx/nginx.png"></code>
+<a href="https://github.com/cozalss/KAMU-EVRAK"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/card-kamu-evrak-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/card-kamu-evrak-light.svg"><img alt="Kamu Evrak — public-sector paperwork · team TasnifX. Agents read, classify (19 types), check and draft official correspondence for human sign-off, with a rule-based fallback behind every LLM step. 76% usable output (up from 22%); ~7 s per document (~$0.001 each); 3.4k tests. Stack: FastAPI, LangGraph, React, RapidOCR." src="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/card-kamu-evrak-dark.svg" width="400"></picture></a>
+<a href="https://github.com/cozalss/Grid-Up-Datathon---TasnifX"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/card-grid-up-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/card-grid-up-light.svg"><img alt="Grid-Up Datathon — Kaggle · 493 teams · team TasnifX. Daily electricity-use forecasts for 7,036 distribution transformers, with separate models for units with and without past data. 7,036 transformers (forecast daily); 1.5k tests; 80 decision records. Stack: Python, CatBoost, LightGBM, XGBoost." src="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/card-grid-up-dark.svg" width="400"></picture></a>
 
-<sub><b>Dev</b></sub>
+Figures come from each project's own README. Try the live demo at **[adalet-agent.vercel.app](https://adalet-agent.vercel.app)**.
 
-<code><img height="36" title="Python" alt="Python" src="https://raw.githubusercontent.com/github/explore/main/topics/python/python.png"></code> <code><img height="36" title="JavaScript" alt="JavaScript" src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png"></code> <code><img height="36" title="TypeScript" alt="TypeScript" src="https://raw.githubusercontent.com/github/explore/main/topics/typescript/typescript.png"></code> <code><img height="36" title="React" alt="React" src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png"></code> <code><img height="36" title="Vite" alt="Vite" src="https://raw.githubusercontent.com/github/explore/main/topics/vite/vite.png"></code> <code><img height="36" title="FastAPI" alt="FastAPI" src="https://raw.githubusercontent.com/github/explore/main/topics/fastapi/fastapi.png"></code> <code><img height="36" title="Java" alt="Java" src="https://raw.githubusercontent.com/github/explore/main/topics/java/java.png"></code> <code><img height="36" title="Supabase" alt="Supabase" src="https://raw.githubusercontent.com/github/explore/main/topics/supabase/supabase.png"></code> <code><img height="36" title="VS Code" alt="VS Code" src="https://raw.githubusercontent.com/github/explore/main/topics/visual-studio-code/visual-studio-code.png"></code>
+## Toolbox
 
-## 🐍 The contribution graph gets eaten nightly
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/stack-build-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/stack-build-light.svg"><img alt="Build — AI systems &amp; product: Python, TypeScript, JavaScript, FastAPI, LangGraph, Qdrant, PyTorch, MediaPipe, Claude API, React, Next.js, Vite, Tailwind, PostgreSQL, Supabase, Redis, Java. Every tool here runs in one of my public repos." src="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/stack-build-dark.svg" width="400"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/stack-ship-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/stack-ship-light.svg"><img alt="Ship — cloud, DevOps &amp; quality: Docker, GitHub Actions, AWS, Terraform, Linux, Bash, Git, pytest, Vitest, Playwright. Lab and learning: Kubernetes, Ansible, Jenkins, GitLab CI, Azure, Google Cloud, Nginx." src="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/stack-ship-dark.svg" width="400"></picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/output/github-snake.svg">
-  <img alt="Snake eating the contribution graph" src="https://raw.githubusercontent.com/cozalss/cozalss/output/github-snake-dark.svg">
-</picture>
+## Telemetry
 
-## 📬 Reach me
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/output/telemetry-activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/output/telemetry-activity-light.svg"><img alt="Activity over the last 12 months: total contributions, weekly bars, longest and current streak, share of active days. Refreshed nightly." src="https://raw.githubusercontent.com/cozalss/cozalss/output/telemetry-activity-dark.svg" width="400"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/output/telemetry-languages-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/output/telemetry-languages-light.svg"><img alt="Language share across public repositories by code size. Refreshed nightly." src="https://raw.githubusercontent.com/cozalss/cozalss/output/telemetry-languages-dark.svg" width="400"></picture>
 
-<a href="mailto:cemmozal@gmail.com"><img alt="Gmail" src="https://img.shields.io/badge/gmail-cemmozal%40gmail.com-e0563c?style=for-the-badge&logo=gmail&logoColor=white"></a>
-<a href="https://github.com/cozalss?tab=followers"><img alt="Followers" src="https://img.shields.io/github/followers/cozalss?style=for-the-badge&logo=github&color=2f8fa6&labelColor=30363d"></a>
+<details>
+<summary><b>🐍 Feed the snake</b>: it eats the contribution graph every night</summary>
+<br>
 
-<sub>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/output/github-snake-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/output/github-snake.svg"><img alt="A snake eating the contribution graph, redrawn every night" src="https://raw.githubusercontent.com/cozalss/cozalss/output/github-snake-dark.svg" width="100%"></picture>
 
-The header is a **handcrafted animated SVG** (SMIL, no generator — [source](https://github.com/cozalss/cozalss/blob/main/assets/banner-dark.svg)).
-The snake redraws itself every night via [![snake workflow](https://github.com/cozalss/cozalss/actions/workflows/snake.yml/badge.svg)](https://github.com/cozalss/cozalss/actions/workflows/snake.yml)
+</details>
 
-</sub>
+## Reach me
+
+<a href="mailto:cemmozal@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/contact-email-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/contact-email-light.svg"><img alt="Email Cem at cemmozal@gmail.com" src="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/contact-email-dark.svg" width="208"></picture></a>
+<a href="https://www.linkedin.com/in/cem-%C3%B6zal-5b9b2226a"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/contact-linkedin-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/contact-linkedin-light.svg"><img alt="Cem Özal on LinkedIn" src="https://raw.githubusercontent.com/cozalss/cozalss/main/assets/contact-linkedin-dark.svg" width="127"></picture></a>
+
+<br>
+
+<details>
+<summary>How this page is built</summary>
+<br>
+
+This README is a small delivery pipeline, built the way I like to ship things.
+
+**No third-party image services, no web fonts.** Every image is an SVG built and served by this repo; only the status badge comes from GitHub itself.
+
+**Compiled artwork.** [`tools/build.py`](https://github.com/cozalss/cozalss/tree/main/tools) compiles the art and this page, outlining the text from Mona Sans and JetBrains Mono so it renders the same on every OS.
+
+**Nightly refresh.** [`profile.yml`](https://github.com/cozalss/cozalss/blob/main/.github/workflows/profile.yml) re-renders the telemetry and the snake each night and publishes them only if they validate. If a step fails, yesterday's panels stay up.
+
+**Locked supply chain.** Actions are pinned to commit SHAs and Python packages to hashes. Only the publish job can write, and it runs no third-party code.
+
+**Accessible motion.** The header animates once and settles within five seconds, and the snake only moves once you open it. Both stand still when your OS asks for reduced motion.
+
+[![profile pipeline](https://github.com/cozalss/cozalss/actions/workflows/profile.yml/badge.svg)](https://github.com/cozalss/cozalss/actions/workflows/profile.yml)
+
+</details>
 
 </div>

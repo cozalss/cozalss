@@ -1,0 +1,12 @@
+# Test settings for the profile toolchain (run from tools/). Dependencies are locked in requirements*.txt.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["--cov", "--cov-report=term-missing:skip-covered"]
+
+[tool.coverage.run]
+source = ["."]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+fail_under = 90

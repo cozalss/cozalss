@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 7 # let a fresh release settle before it can run in this repo
+    groups:
+      actions:
+        patterns: ["*"]
+  - package-ecosystem: pip # pip-compile: edits tools/requirements*.in and regenerates the hashed locks
+    directory: /tools
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 7
+    groups:
+      python:
+        patterns: ["*"]
